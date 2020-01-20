@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id='domains'></p>
+
+    <script>
+
+        var pronoum = ["the", "our"];
+        var adj = ["great", "big"];
+        var noun = ["jogger", "racoon"];
+        var end = ".com";
+        let total = '';
+
+        function domain() {
+            for (var i = 0; i < pronoum.length; i++) {
+                for (var j = 0; j < adj.length; j++) {
+                    for (k = 0; k < noun.length; k++) {
+                        console.log(pronoum[i] + adj[j] + noun[k] + end);
+
+                        var var1 = pronoum[i];
+                        var var2= adj[j];
+                        var var3= noun[k];
+                        total += var1+var2+var3+end+"<br>";
+                    }
+                }
+            }
+            document.getElementById('domains').innerHTML= total;
+        }
+
+    domain();
+
+    </script>
+</body>
+
+</html>
